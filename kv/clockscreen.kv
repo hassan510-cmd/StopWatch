@@ -1,0 +1,22 @@
+<ClockScreen>:
+    ImageButton:
+        source:'icon/forward.png'
+        size_hint:(None,None)
+        width:'70dp'
+        height:'70dp'
+        pos_hint:{"center_x":0.9,"center_y":0.9}
+        on_release:app.go_forward()
+
+    BoxLayout:
+        orientation:'vertical'
+        size_hint:(1,1)
+        Label:
+            id:time
+            text:'[b]00[/b]:00:00'
+            color:(1,1,.95,1)
+            font_name:'Roboto'
+            font_size:100
+            markup:True
+            text_size: root.width, None
+            halign:"center"
+#            size: self.texture_size
