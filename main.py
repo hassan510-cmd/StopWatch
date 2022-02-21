@@ -67,8 +67,8 @@ class MainApp(App):
 if __name__ == '__main__':
     Config.set('graphics','resizable',True)
     Window.clearcolor = get_color_from_hex('#121212')
-    LabelBase.register(name='Robot', fn_regular='Roboto-Thin.ttf',
-                       fn_bold='Roboto-Medium.ttf')
+    # LabelBase.register(name='Robot', fn_regular='Roboto-Thin.ttf',
+    #                    fn_bold='Roboto-Medium.ttf')
 
     MainApp().run()
 
