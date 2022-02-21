@@ -1,0 +1,5 @@
+venv/
+.kivy/
+.buildozer/
+.idea/
+bin/
