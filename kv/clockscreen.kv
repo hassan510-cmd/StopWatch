@@ -10,6 +10,9 @@
     BoxLayout:
         orientation:'vertical'
         size_hint:(1,1)
+        RoundedButton:
+            text : "rounded"
+            size_hint:(0.2,0.3)
         Label:
             id:time
             text:'[b]00[/b]:00:00'
@@ -19,4 +22,15 @@
             markup:True
             text_size: root.width, None
             halign:"center"
+
+<RoundedButton@Button>
+    background_color :(0,0,0,0)
+    background_normal :""
+    canvas.before:
+        Color:
+            rgba:(48/255,84/255,150/255,1)
+        RoundedRectangle:
+            size : self.size
+            pos : self.pos
+            radius :[20]
 #            size: self.texture_size
