@@ -1,0 +1,8 @@
+adb tcpip 5555
+# get your phone ip address :
+#> About tablet (or About phone) > Status > IP address.
+adb connect [ip_here]:5555
+# ex : adb connect 10.0.1.42:5555
+adb devices
+#adb -s [device_name from above command] logcat
+adb -s 65dc52c8 logcat
